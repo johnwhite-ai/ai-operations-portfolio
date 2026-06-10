@@ -1,0 +1,13 @@
+{
+  "_comment": "Add your subscribed Refrag sets here. The dashboard surfaces them as one-click drill buttons. Match a weakness keyword to a drill via 'matches_keywords'.",
+  "drills": [
+    {
+      "id": 412,
+      "title": "Old Clutch - Mirage",
+      "url": "https://play.refrag.gg/community_hub/custom_sets/412",
+      "tags": ["clutch", "mirage", "1vX"],
+      "matches_keywords": ["clutch", "1vX"],
+      "weakness_summary": "1vX scenarios on Mirage — bots converge on you from all directions"
+    }
+  ]
+}

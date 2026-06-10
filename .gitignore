@@ -1,0 +1,23 @@
+# Build scripts for portfolio assets/manuals — contain local filesystem paths, keep private
+assets/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# Data / replays (keep the engine, not the raw personal data)
+*.dem
+demos/
+reports/*.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Env
+.env
+*.local

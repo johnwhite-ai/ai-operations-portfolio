@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CS2 Training</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>CS2 Training</h1>
+    <div id="status">checking...</div>
+  </header>
+
+  <section id="todays-drill" class="todays-drill">
+    <h2>Today's Drill</h2>
+    <div id="drill-info">Loading latest weekly report...</div>
+  </section>
+
+  <section id="refrag-drills" class="refrag-drills">
+    <h2>Refrag Drills <span class="map-note">click to open in Refrag</span></h2>
+    <div id="refrag-drills-list">Loading drill catalog...</div>
+  </section>
+
+  <section>
+    <h2>Aim Trainer <span class="map-note">aim_treeni_fps</span></h2>
+    <button data-cmd="map_workshop 3615956855">Load Map</button>
+
+    <h3>Presets</h3>
+    <button class="preset"
+            data-cmd="say !usp"
+            data-desc="Walk to LINEAR TARGETS panel. Size 5 then 3 then 2. Area 7x7. Target HP 1.">
+      Warmup (USP Linear)
+    </button>
+    <button class="preset"
+            data-cmd="say !ak47"
+            data-desc="Walk to LINEAR TARGETS panel. Size 3. Target HP 3. Practice single bursts.">
+      AK Burst
+    </button>
+    <button class="preset"
+            data-cmd="say !ak47"
+            data-desc="Walk to ROUND TARGETS panel. Head-size. Moving + Random ON. Target HP 3. Swap between AK and USP.">
+      Tracking
+    </button>
+
+    <h3>Weapons</h3>
+    <button data-cmd="say !usp">USP</button>
+    <button data-cmd="say !ak47">AK</button>
+    <button data-cmd="say !m4">M4</button>
+    <button data-cmd="say !m4s">M4S</button>
+    <button data-cmd="say !awp">AWP</button>
+    <button data-cmd="say !deagle">Deagle</button>
+    <button data-cmd="say !glock">Glock</button>
+    <button data-cmd="say !p2000">P2000</button>
+
+    <h3>Map Toggles</h3>
+    <button data-cmd="say !norecoil">No Recoil</button>
+    <button data-cmd="say !noviewmodel">No Viewmodel</button>
+    <button data-cmd="say !nohud">No HUD</button>
+    <button data-cmd="say !showimpacts">Show Impacts</button>
+    <button data-cmd="say !showkills">Show Kills</button>
+    <button data-cmd="say !hidekills">Hide Kills</button>
+
+    <h3>Quick Actions</h3>
+    <button data-cmd="mp_restartgame 1">Restart Round</button>
+    <button data-cmd="sv_cheats 1; noclip">Toggle Noclip</button>
+    <button data-cmd="sv_cheats 1; god">Toggle God</button>
+
+    <div id="preset-info" class="preset-info">Click a preset to see its target settings.</div>
+  </section>
+
+  <section>
+    <h2>Drills <span class="map-note">workshop pivot pending</span></h2>
+    <button data-cmd="exec drill_retake">Retake (broken — will pivot)</button>
+    <button data-cmd="exec drill_prefire">Prefire (broken — will pivot)</button>
+  </section>
+
+  <section>
+    <h2>Util</h2>
+    <button data-cmd="exec util_refill">Refill Util</button>
+    <button data-cmd="mp_restartgame 1">Restart Round</button>
+    <button data-cmd="sv_grenade_trajectory_prac_pipreview 1">Nade Trajectory On</button>
+    <button data-cmd="sv_grenade_trajectory_prac_pipreview 0">Nade Trajectory Off</button>
+  </section>
+
+  <section>
+    <h2>Bots</h2>
+    <button data-cmd="bot_kick">Kick All</button>
+    <button data-cmd="bot_add_t">Add T</button>
+    <button data-cmd="bot_add_ct">Add CT</button>
+    <button data-cmd="bot_stop 1">Freeze</button>
+    <button data-cmd="bot_stop 0">Unfreeze</button>
+  </section>
+
+  <section>
+    <h2>Quick</h2>
+    <button data-cmd="noclip">Toggle Noclip</button>
+    <button data-cmd="god">Toggle God</button>
+    <button data-cmd="jointeam 2">Join T</button>
+    <button data-cmd="jointeam 3">Join CT</button>
+  </section>
+
+  <footer>
+    <div id="last">Last: -</div>
+    <button id="redeploy">Redeploy CFGs</button>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
